@@ -15,6 +15,8 @@ import { AppComponent } from './app.component';
 
 //Pages must be put under theis command
 import { HomeComponent } from './pages/home/home.component';
+import { LogInComponent } from './pages/log-in/log-in.component';
+import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 
 
 //Components such as Nabar and others must be places under here
@@ -26,7 +28,7 @@ import { HomeComponent } from './pages/home/home.component';
 const httpLoaderFactory = (http: HttpClient): TranslateHttpLoader =>  new TranslateHttpLoader(http, './assets/i18n/', '.json');
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, LogInComponent, AdminDashboardComponent],
   imports: [
     BrowserModule,
     FormsModule,
